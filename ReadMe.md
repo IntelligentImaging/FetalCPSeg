@@ -19,7 +19,6 @@ For running the straight-out-of-the-box fetal cortical plate segmentation
 4. Outputs will be named like "Input/Image001/predict.nii.gz"
 Directory and file paths can be adjusted in the infer_novel script
 
-
 ## Known Issues
 1. The Fast version of the proposed network can not our previous trained model.
 This issue is mainly caused by the inconsistency of the checkpoint name between the network defining and trained model saving due to the modification.
