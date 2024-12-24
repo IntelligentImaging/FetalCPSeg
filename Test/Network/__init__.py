@@ -1,2 +1,0 @@
-from .FFMNet import MixAttNet
-
