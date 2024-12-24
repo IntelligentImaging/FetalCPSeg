@@ -11,6 +11,14 @@ Note that:
 The current network architecture is slightly different from that presented in the paper, which is no worries. These are
 only minor replacement. e.g. use the groupnorm instead of batchnorm, use the RRelu instead of PRelu.
 
+## Basic Usage
+For running the straight-out-of-the-box fetal cortical plate segmentation
+1. Make an "Input/" directory
+2. For each input image, add a subdirectory and copy the input image (ie "Input/Image001/image.nii.gz")
+3. $ python infer_novel.py
+4. Outputs will be named like "Input/Image001/predict.nii.gz"
+Directory and file paths can be adjusted in the infer_novel script
+
 
 ## Known Issues
 1. The Fast version of the proposed network can not our previous trained model.
