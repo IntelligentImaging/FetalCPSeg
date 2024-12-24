@@ -1,0 +1,19 @@
+How to train?
+
+The whole program contains five parts.
+1. Network.py. The python file to define the proposed network (referred to the class "MixAttNet").
+2. volumentations.  A third-party library for 3D image data augmentation.
+3. DataOp.py. The python file to define the data operation supporting functions.
+              Some variables should be concerns when training with own data.
+              Line-32/33, The name of image and ground truth
+              Line-44/45, The ratio for splitting dataset into training, validation and testing.
+              Line-116, The ratio to increase the patch sampling probability in the label area.
+4. Train.py. The main file for training.
+5. Utils.py. Some supporting function, not important.
+
+Please check the DataOp comments at first, and settle the dataset as it.
+Then, run the Train.py to train the network.
+
+Hyper-parameters and path setting are clearly defined in the Train.py.
+
+

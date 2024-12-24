@@ -1,0 +1,24 @@
+How to test?
+
+This program project including five parts.
+1. ckpt_save. This folder contains the trained models
+              including the model with best validation result (best_test.pth.gz) and the model saved in the final epoch (latest_train.pth.gz).
+2. Network. This folder contains the python file (FFMNet.py)
+            defining the network architecture (referred the class "MixAttNet").
+3. DataOp.py. This file define the data operation for supporting the test.
+              Check the comments in function "get_list" to figure out the details of how to read data.
+4. Infer.py. The main test file
+5. Utils.py. Some support functions, not important.
+
+Please check the DataOp.py first and process all of the data according to the comments.
+and then run the infer.py to test the data
+
+Tips in infer.py:
+1. define the model loading path in line-17
+2. define the data loading path in line-20
+3. if the mask is unavailable, please remove the codes related to the mask variable.
+
+
+
+
+
